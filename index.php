@@ -66,7 +66,7 @@ catch(PODException $e){
         $username = htmlspecialchars($post['username'], ENT_QUOTES, 'UTF-8');
         $date = htmlspecialchars($post['date']);
         if($rarity === 1){
-            return '<li><h1><font color="red">'.$text.' ('.$username.') - '.$date.'</font></h1>';
+            return '<li><h1 style=" color:red ">'.$text.' ('.$username.') - '.$date.'</h1>';
         }else if($rarity === 2){
             return '<li><h2>'.$text.' ('.$username.') - '.$date.'</h2>';
         }else if($rarity === 3){
